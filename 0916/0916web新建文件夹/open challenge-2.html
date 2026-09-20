@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Survey on Software Technology Preferences</title>
+</head>
+<body>
+    <header>
+        <h1>Survey on Software Technology Preferences</h1>
+    </header>
+
+    <section>
+        <form>
+            <p>
+                1. Grade<br>
+                <input type="radio" name="grade" value="1"> Freshman
+                <input type="radio" name="grade" value="2"> Sophomore
+                <input type="radio" name="grade" value="3"> Junior
+                <input type="radio" name="grade" value="4"> Senior
+            </p >
+
+            <p>
+                2. Gender<br>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </p >
+
+            <p>
+                3. Field of interest in software technology<br>
+                <select name="interest">
+                    <option value="web">Web Development</option>
+                    <option value="mobile">Mobile App Development</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="game">Game Development</option>
+                    <option value="security">Information Security</option>
+                </select>
+            </p >
+
+            <p>
+                4. Desired career direction (multiple choices allowed)<br>
+                <input type="checkbox" name="career" value="dev"> Developer
+                <input type="checkbox" name="career" value="design"> Designer
+                <input type="checkbox" name="career" value="pm"> Project Manager
+                <input type="checkbox" name="career" value="test"> Tester
+                <input type="checkbox" name="career" value="data"> Data Analyst
+            </p >
+
+            <p>
+                5. Leave your comments<br>
+                <textarea rows="5" cols="40" name="comment"></textarea>
+            </p >
+
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p >
+        </form>
+    </section>
+
+    <footer>
+        <p>Copyright 2022 by Kitae</p >
+    </footer>
+</body>
+</html>
