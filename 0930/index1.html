@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자기소개 페이지</title>
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box;font-family:system-ui, sans-serif;}
+        body{background-color:#f0f7ff;color:#222;line-height:1.6;padding:2rem 0;}
+        .avatar{width:140px;height:140px;object-fit:cover;border-radius:50%;border:3px solid #87CEFA;}
+    </style>
+</head>
+<body>
+<div class="container">
+    <!-- 个人信息卡片 -->
+    <div class="card shadow mb-5">
+        <div class="card-body p-4 p-md-5">
+            <div class="d-flex flex-column flex-md-row gap-4 align-items-center align-items-md-start">
+                < img class="avatar" src="" alt="프로필">
+                <table class="table table-borderless mb-0">
+                    <tbody>
+                    <tr>
+                        <th class="w-25 text-secondary">이름(姓名)</th>
+                        <td>Zhang luyue</td>
+                    </tr>
+                    <tr>
+                        <th class="w-25 text-secondary">전공(专业)</th>
+                        <td>网络工程</td>
+                    </tr>
+                    <tr>
+                        <th class="w-25 text-secondary">나이(年龄)</th>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <th class="w-25 text-secondary">거주지(所在地)</th>
+                        <td>한국</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Me 自我介绍卡片 -->
+    <div class="card shadow mb-5">
+        <div class="card-body p-4 p-md-5">
+            <h2 class="card-title border-bottom pb-3 mb-4">About Me / 自我介绍</h2>
+            <p>
+大家好，我是一名专注于网页开发方向的在校学生。我以网络相关专业知识作为基础，一边学习网页前端技术，使用 HTML、CSS、JavaScript 来搭建可用的 웹 서비스。我希望把网络环境和网页开发结合起来，制作普通人能够简单上手、体验友好的页面作品，在实操练习当中积累自己的开发经验。
+            </p >
+            <p class="mt-3">
+技术的提升离不开长期的练习，我会主动查阅资料解决遇到的问题，不断补齐自身短板。同时我十分看重团队沟通，愿意倾听他人的想法，希望在打磨技术的同时，成为可以和同伴共同进步的学习者。
+            </p >
+
+            <h3 class="mt-5 mb-3">✅ 个人优势</h3>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="bg-light p-3 rounded h-100">
+                        <strong>✔ 具备专业基础</strong>
+                        <p class="mb-0 mt-2 small text-muted">理解网络架构与基础设备，能够看懂服务底层运行的基本环境。</p >
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-light p-3 rounded h-100">
+                        <strong>✔ 注重实操落地的学习习惯</strong>
+                        <p class="mb-0 mt-2 small text-muted">不只阅读理论，更喜欢动手写代码调试，在试错当中积累实际经验。</p >
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="bg-light p-3 rounded h-100">
+                        <strong>✔ 善于倾听的协作意识</strong>
+                        <p class="mb-0 mt-2 small text-muted">认真对待分配的任务，接纳不同意见，和伙伴向着共同目标推进工作。</p >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills 技能卡片 -->
+    <div class="card shadow mb-5">
+        <div class="card-body p-4 p-md-5">
+            <h2 class="card-title border-bottom pb-3 mb-4">Skills / 技能</h2>
+            <div>
+                <span class="badge bg-primary m-1 fs-6">HTML / CSS</span>
+                <span class="badge bg-secondary m-1 fs-6">JavaScript</span>
+                <span class="badge bg-success m-1 fs-6">Git & GitHub</span>
+                <span class="badge bg-info m-1 fs-6">Python</span>
+                <span class="badge bg-dark m-1 fs-6">【其他技能】</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact 联系方式卡片 -->
+    <div class="card shadow">
+        <div class="card-body p-4 p-md-5">
+            <h2 class="card-title border-bottom pb-3 mb-4">Contact / 联系方式</h2>
+            <div>
+                <a href=" " class="btn btn-outline-primary me-2 my-1">Email</a >
+                <a href="https://github.com/" target="_blank" class="btn btn-outline-secondary me-2 my-1">GitHub</a >
+                <a href="tel:" class="btn btn-outline-success my-1">Tel</a >
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
