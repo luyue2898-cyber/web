@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>윤년 계산기</title>
+</head>
+<body>
+    <h3>윤년 계산기</h3>
+    <hr>
+    <script>
+        let msg = "연도를 입력하세요";
+
+        while (true) {
+            let input = prompt(msg, "");
+
+            // 취소 버튼을 누르거나 빈칸이면 종료
+            if (input === null || input === "") {
+                break;
+            }
+
+            let year = parseInt(input);
+
+            if (isNaN(year)) {
+                msg = "올바른 숫자를 입력해주세요.\n\n연도를 다시 입력하세요 (취소 시 종료):";
+            } else {
+                let isLeap = (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+                let result = year + "년은 " + (isLeap ? "윤년" : "평년") + "입니다.";
+                
+                // prompt 창에 결과를 알려주며 다음 연도를 계속 입력받음
+                msg = result + "\n\n다음 연도를 입력하세요 (취소 시 종료):";
+            }
+        }
+
+        document.write("계산기가 종료되었습니다.");
+    </script>
+</body>
+</html>

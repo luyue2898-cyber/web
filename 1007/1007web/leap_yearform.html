@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>윤년 계산기</title>
+</head>
+<body>
+    <h3>윤년 계산기</h3>
+    <hr>
+    <form onsubmit="checkLeapYear(); return false;">
+        연도: <input type="number" id="year" placeholder="연도 입력">
+        <button type="submit">확인</button>
+    </form>
+    <br>
+    <div id="result"></div>
+
+    <script>
+        function checkLeapYear() {
+            let year = parseInt(document.getElementById("year").value);
+            let result = document.getElementById("result");
+
+            if (isNaN(year)) {
+                result.innerHTML = "올바른 숫자를 입력해주세요.";
+                return;
+            }
+
+            if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+                result.innerHTML = year + "년은 윤년입니다.";
+            } else {
+                result.innerHTML = year + "년은 평년입니다.";
+            }
+        }
+    </script>
+</body>
+</html>
