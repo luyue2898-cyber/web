@@ -1,1 +1,159 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的作品集 | 나의 포트폴리오</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%234a6fa5'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --text:#333;
+    --sub:#888;
+    --line:#eaeaea;
+    --blue:#5588bb;
+    --bg:#f8f9fa;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:"Noto Sans SC","Noto Sans KR","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+    line-height:1.75;
+    padding:0 20px 60px;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  /* 顶部导航 */
+  nav{
+    position:sticky;top:0;z-index:2;
+    background:#fff;
+    padding:16px 0;
+    text-align:center;
+    box-shadow:0 2px 6px rgba(0,0,0,.06);
+  }
+  nav a{
+    margin:0 14px;
+    text-decoration:none;
+    color:#555;
+    font-size:15px;
+    padding-bottom:2px;
+    border-bottom:1px solid transparent;
+  }
+  nav a:hover{color:var(--blue);border-bottom-color:var(--blue);}
+
+  .container{max-width:860px;margin:40px auto;}
+
+  section{
+    background:#fff;
+    padding:26px 28px;
+    border-radius:12px;
+    box-shadow:0 2px 8px rgba(0,0,0,.04);
+    margin-bottom:28px;
+  }
+
+  h2{font-size:20px;margin-bottom:4px;font-weight:700;}
+  .kr{color:var(--sub);font-size:13px;margin-bottom:14px;}
+  hr{border:none;border-top:1px solid var(--line);margin:0 0 16px;}
+
+  p{font-size:15.5px;color:#444;margin-bottom:10px;}
+
+  /* 作品条目 */
+  .work-item{
+    padding:16px 18px;
+    border:1px solid var(--line);
+    border-radius:10px;
+    margin:12px 0 0;
+    transition:.2s;
+  }
+  .work-item:hover{border-color:#cfdcea;background:#fafcff;}
+  .work-item h4{font-size:16px;margin-bottom:6px;font-weight:500;}
+  .work-item p{font-size:14.5px;color:var(--sub);margin-bottom:8px;}
+  .work-item a{
+    display:inline-block;
+    font-size:14px;
+    color:var(--blue);
+    text-decoration:none;
+    border-bottom:1px solid rgba(85,136,187,.4);
+    padding-bottom:1px;
+  }
+  .work-item a:hover{color:#3d6d9c;border-bottom-color:#3d6d9c;}
+  .tip{font-size:13.5px;color:var(--sub);}
+
+  /* 联系 */
+  .contact-line{font-size:15.5px;margin-bottom:8px;}
+  .contact-line span{color:var(--sub);font-size:14px;display:inline-block;width:72px;}
+
+  footer{
+    text-align:center;
+    padding:10px 0;
+    color:#999;
+    font-size:13px;
+  }
+
+  @media (max-width:600px){
+    body{padding:0 14px 40px;}
+    section{padding:20px 18px;}
+    nav a{margin:0 10px;font-size:14px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#about">自我介绍</a>
+  <a href="#works">我的作品</a>
+  <a href="#contact">联系我</a>
+</nav>
+
+<div class="container">
+
+  <!-- 自我介绍 -->
+  <section id="about">
+    <h2>自我介绍</h2>
+    <div class="kr">자기소개</div>
+    <hr>
+    <p>你好！我是正在学习网页制作的一名学生。</p>
+    <p>目前还在慢慢练习，跟着课堂任务做一些简单的页面，一边做一边积累经验。</p>
+    <p>这个页面是我用上课学到的东西做的作业，还有很多不熟练的地方，以后会继续改进。</p>
+    <p class="tip">안녕하세요. 웹을 배우고 있는 학생입니다. 아직 많이 부족하지만 열심히 연습 중입니다.</p>
+  </section>
+
+  <!-- 我的作品 -->
+  <section id="works">
+    <h2>我的作品</h2>
+    <div class="kr">나의 작품</div>
+    <hr>
+    <p class="tip">下面是我课堂上做的一些小练习，之后会继续上传新的。</p>
+
+    <div class="work-item">
+      <h4>自动跳转的网页</h4>
+      <p>鼠标放到图片上，等几秒钟就会自动跳到网站去。</p>
+      <a href="3.html">查看这个页面</a>
+    </div>
+
+    <div class="work-item">
+      <h4>其他课堂作业</h4>
+      <p>后面做的练习会陆续放在这里。</p>
+    </div>
+  </section>
+
+  <!-- 联系我 -->
+  <section id="contact">
+    <h2>联系我</h2>
+    <div class="kr">연락하기</div>
+    <hr>
+    <p class="contact-line"><span>邮箱</span>（这里填你的邮箱）</p>
+    <p class="contact-line"><span>GitHub</span>（这里填你的 GitHub 地址）</p>
+    <p class="tip">如果有问题想问我，可以发邮件给我。</p>
+  </section>
+
+</div>
+
+<footer>
+  简单的网页作品集 · 간단한 포트폴리오
+</footer>
+
+</body>
+</html>
 
